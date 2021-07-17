@@ -1,0 +1,98 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --primary-bgcolor: lightseagreen;
+  --secondary-bgcolor: #087f5b;
+  --main-bg-color: beige;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  background: var(--main-bg-color);
+}
+
+button {
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 10px;
+  max-width: 200px;
+  min-width: 150px;
+  background: var(--primary-bgcolor);
+  color: var(--primary-color);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+  transition: 0.5s transform;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(10, 1fr);
+  max-width: 1000px;
+  margin: auto;
+}
+
+article {
+  box-shadow: 2px 2px 10px grey;
+  padding: 20px;
+  height: 50px;
+  background: var(--secondary-bgcolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  border-radius: 8px;
+  color: var(--secondary-color);
+  grid-column: 1 / 11;
+  transition: 1s height ease-in;
+  overflow-y: scroll;
+}
+
+article[class="open"] {
+  background: #212529;
+  height: 300px;
+}
+
+article p {
+  text-align: left;
+  text-indent: 10%;
+  max-width: 90%;
+}
+
+
+.sandbox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 5px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sandbox a {
+  background: #364fc7;
+  padding: 5px;
+  text-decoration: 0;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+.sandbox a:hover {
+  text-decoration: underline;
+}
+
+.sandbox a:active {
+  transform: scale(0.9);
+}
