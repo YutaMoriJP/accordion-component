@@ -1,1 +1,1 @@
-# <Accordion /> - A re-usable React component
+# Accordion - A re-usable React component
