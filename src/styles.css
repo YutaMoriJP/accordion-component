@@ -17,7 +17,7 @@ button {
   margin: 10px;
   text-transform: uppercase;
   font-weight: 900;
-  padding: 10px;
+  padding: 16px;
   max-width: 200px;
   min-width: 150px;
   background: var(--primary-bgcolor);
